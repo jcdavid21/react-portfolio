@@ -609,32 +609,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer img {
   width: 26%;
 }
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
 
-@media screen and (max-width: 768px) {
-  .project p {
-    font-size: 14px;
-  }
 
-  .project .text{
-    width: 100%;
-  }
-  .footer .slideInUp .new-email-bx{
+  .App .footer .slideInUp .new-email-bx{
     display: flex;
     flex-direction: column;
   }
 
-  .footer .slideInUp .new-email-bx button{
+  .App .footer .slideInUp .new-email-bx button{
     margin-top: 30px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  
-}
 
+  .footer p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #B8B8B8;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+
+
+  .project p{
+    font-size: 16px;
+    width: 100%;
+  }
+  
+
+@media (min-width: 768px) {
+  .project p{
+    font-size: 18px;
+    width: 56%;
+  }
+}
