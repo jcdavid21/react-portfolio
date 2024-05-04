@@ -29,11 +29,11 @@ export const Contact = () => {
     Swal.fire({
       title: "Submitted Successfully!",
       text: "Thank you for using Jc's portfolio!",
-      icon: "success",
-      showConfirmButton: false,
-      timer: 3000,
-    }).then(()=>{
-        setFormDetails(formInitialDetails); 
+      icon: "success"
+    }).then((result)=>{
+      if(result.isConfirmed){
+        setFormDetails(formInitialDetails); // Reset form details
+      }
     })
   };
 
@@ -44,7 +44,7 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact"/>
               }
             </TrackVisibility>
           </Col>
